@@ -1,4 +1,4 @@
-// Basic
+/*// Basic
 
 // 1: Hello World!
 println("Hello World!")
@@ -129,17 +129,15 @@ def patternMatching1a(num1: Int, num2: Int, ifTrue: Boolean): Int = ifTrue match
 println(patternMatching1a(3, 4, true))
 println(patternMatching1a(3, 4, false))
 
-def patternMatching1b(num1: Int, num2: Int, ifTrue: Boolean): Int = ifTrue match {
-  case true =>
-    if (num1 == 0) num2
-    else if (num2 == 0) num1
-    else if (num1 == 0 && num2 == 0) 0
-    else num1 + num2
-  case false =>
-    if (num1 == 0) num2
-    else if (num2 == 0) num1
-    else if (num1 == 0 && num2 == 0) 0
-    else num1 * num2
+def patternMatching1b(num1: Int, num2: Int, ifTrue: Boolean): Int = num1 match {
+  case 0 => num2
+  case _ => num2 match {
+    case 0 => num1
+    case _ => ifTrue match {
+      case true => num1 + num2
+      case false => num1 * num2
+    }
+  }
 }
 println(patternMatching1b(0, 4, true)) // Return num2
 println(patternMatching1b(23, 0, true)) // Return num1
@@ -153,7 +151,11 @@ def patternMatching2(any: Any): Any = any match {
   case List(a,b) => (b,a)
   case (a,b) => (b,a)
 }
-println(patternMatching2(1,2))
+println(patternMatching2(1,2))*/
 
 // 17: Functional 1
 import java.util.TimeZone.getAvailableIDs
+var availableIDs = getAvailableIDs
+
+val something = "blah/blah"
+something.split("/")
