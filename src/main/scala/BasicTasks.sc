@@ -1,5 +1,3 @@
-/*// Basic
-
 // 1: Hello World!
 println("Hello World!")
 
@@ -150,11 +148,31 @@ def patternMatching2(any: Any): Any = any match {
   case Array(a,b) => (b,a)
   case List(a,b) => (b,a)
   case (a,b) => (b,a)
+  case _ => "You're a fool"
 }
-println(patternMatching2(1,2))*/
+println(patternMatching2(1,2,8))
 
 // 17: Functional 1
-var availableIDs = java.util.TimeZone.getAvailableIDs.foreach(line => println(line takeRight '/'))
+var availableIDs = java.util.TimeZone.getAvailableIDs.map(line => line.split("/").last).filter(line => line.length() > 1).map(line => line.grouped(10))
 
-val something = "blah/blah"
-something.split("/")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
