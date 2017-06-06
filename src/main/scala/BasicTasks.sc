@@ -154,8 +154,7 @@ def patternMatching2(any: Any): Any = any match {
 println(patternMatching2(1,2))*/
 
 // 17: Functional 1
-import java.util.TimeZone.getAvailableIDs
-var availableIDs = getAvailableIDs
+var availableIDs = java.util.TimeZone.getAvailableIDs.foreach(line => println(line takeRight '/'))
 
 val something = "blah/blah"
 something.split("/")
