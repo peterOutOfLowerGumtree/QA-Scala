@@ -1,10 +1,6 @@
 package Garage
 
-class Customer(customerIDc: Int, namec: String, agec: Int, contactNoc: String, contactAddressc: String, postCodec: String) extends Person(namec, agec, contactNoc) {
-  private var _customerID: Int = customerIDc
-  private var _contactAddress: String = contactAddressc
-  private var _postCode: String = postCodec
-
+class Customer(var _customerID: Int, name: String, age: Int, contactNo: String, var _contactAddress: String, var _postCode: String) extends Person(name, age, contactNo) {
   def customerID = _customerID
   def contactAddress = _contactAddress
   def postCode = _postCode

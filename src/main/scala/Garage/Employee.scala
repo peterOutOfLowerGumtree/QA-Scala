@@ -1,10 +1,6 @@
 package Garage
 
-class Employee(employeeIDc: Int, namec: String, agec: Int, contactNoc: String, rolec: String, wagec: Double) extends Person(namec, agec, contactNoc) {
-  private var _employeeID: Int = employeeIDc
-  private var _role: String = rolec
-  private var _wage: Double = wagec
-
+class Employee(var _employeeID: Int, name: String, age: Int, contactNo: String, var _role: String, var _wage: Double) extends Person(name, age, contactNo) {
   def employeeID = _employeeID
   def role = _role
   def wage = _wage

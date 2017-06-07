@@ -1,10 +1,6 @@
 package Garage
 
-abstract class Person(namec: String, agec: Int, contactNoc: String) {
-  private var _name: String = namec
-  private var _age: Int = agec
-  private var _contactNo: String = contactNoc
-
+abstract class Person(var _name: String, var _age: Int, var _contactNo: String) {
   def name = _name
   def age = _age
   def contactNo = _contactNo

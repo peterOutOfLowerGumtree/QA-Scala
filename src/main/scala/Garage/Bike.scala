@@ -1,7 +1,5 @@
 package Garage
 
-class Bike(brandc: String, typeOfBikec: String, isFixedc: Boolean) extends Vehicle(brandc, isFixedc) {
-  val typeOfBike: String = typeOfBikec
-
-  override def toString: String = s"Bike | Brand: $brand | Type of Bike: $typeOfBike | Fixed: $isFixed"
+class Bike(id: Int, brand: String, val typeOfBike: String, var isFixed2: Boolean) extends Vehicle(id, brand, isFixed2) {
+  override def toString: String = s"ID: $id | Bike | Brand: $brand | Type of Bike: $typeOfBike | Fixed: $isFixed"
 }
