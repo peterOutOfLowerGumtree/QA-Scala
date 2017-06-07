@@ -14,8 +14,8 @@ class Garage {
     for (v <- array.toArray) println(v)
   }
 
-  def addCar(brand: String, make: String, regNo: String, numberOfDoors: Int, numberOfGears: Int): Unit = {
-    vehicleList += new Car(brand, make, regNo, numberOfDoors, numberOfGears, false)
+  def addCar(brand: String, make: String, regNo: String): Unit = {
+    vehicleList += new Car(brand, make, regNo, false)
   }
   def addBike(brand: String, typeOfBike: String): Unit = {
     vehicleList += new Bike(brand, typeOfBike, false)

@@ -13,7 +13,7 @@ object Runner {
 
     garage.personList += emp
     garage.personList += cus
-    garage.addCar("BMW", "X5", "R3GN UMB", 4, 6)
+    garage.addCar("BMW", "X5", "R3GN UMB")
     garage.addBike("Spark", "Bicycle")
     garage.spitPersonList(garage.personList)
     garage.spitVehicleList(garage.vehicleList)
