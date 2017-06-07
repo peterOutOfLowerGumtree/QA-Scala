@@ -1,6 +1,8 @@
 package Garage
 
-class Car(brandc: String, modelc: String, regNoc: String, numberOfDoorsc: Int, numberOfGearsc: Int, isFixedc: Boolean) extends Vehicle(brandc, modelc, regNoc, isFixedc) {
+class Car(brandc: String, modelc: String, regNoc: String, numberOfDoorsc: Int, numberOfGearsc: Int, isFixedc: Boolean) extends Vehicle(brandc, isFixedc) {
+  val model = modelc
+  val regNo = regNoc
   val numberOfDoors = numberOfDoorsc
   val numberOfGears = numberOfGearsc
 

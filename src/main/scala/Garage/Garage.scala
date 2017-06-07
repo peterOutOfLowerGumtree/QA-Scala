@@ -17,8 +17,8 @@ class Garage {
   def addCar(brand: String, make: String, regNo: String, numberOfDoors: Int, numberOfGears: Int): Unit = {
     vehicleList += new Car(brand, make, regNo, numberOfDoors, numberOfGears, false)
   }
-  def addBike(brand: String, make: String, regNo: String, typeOfBike: String): Unit = {
-    vehicleList += new Bike(brand, make, regNo, typeOfBike, false)
+  def addBike(brand: String, typeOfBike: String): Unit = {
+    vehicleList += new Bike(brand, typeOfBike, false)
   }
 
   def removeByType(vehicleType: String): Unit = {
