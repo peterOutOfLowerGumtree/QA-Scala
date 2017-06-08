@@ -6,7 +6,7 @@ println(returnStrings("Hello", 3))
 
 // 7: Strings 2
 def returnStrings2(word1: String, word2: String, char1: Char, char2: Char): String = {
-  val concat = word1 + word2
+  lazy val concat = word1 + word2
   concat.replace(char1, char2)
 }
 println(returnStrings2("Ha", "llo", 'a', 'e'))
