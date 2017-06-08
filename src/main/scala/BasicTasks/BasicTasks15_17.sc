@@ -33,25 +33,3 @@ println(patternMatching2(1,2,8))
 
 // 17: Functional 1
 var availableIDs = java.util.TimeZone.getAvailableIDs.map(line => line.split('/')).filter(_.length > 1).map(line => line(1)).grouped(10).map(line => line(0)).toArray
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

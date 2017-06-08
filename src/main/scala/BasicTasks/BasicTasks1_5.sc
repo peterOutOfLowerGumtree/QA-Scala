@@ -2,18 +2,18 @@
 println("Hello World!")
 
 // 2: Assignment
-var helloWorld = "Hello World!"
+lazy val helloWorld = "Hello World!"
 println(helloWorld)
 
 // 3: Parameters
-def parameters: String = {
+lazy val parameters: String = {
   "Hello World!"
 }
 println(parameters)
 
 // 4: Return types
-def returnString: String = {
-  val string = "Hello World!"
+lazy val returnString: String = {
+  lazy val string = "Hello World!"
   string
 }
 println(returnString)
