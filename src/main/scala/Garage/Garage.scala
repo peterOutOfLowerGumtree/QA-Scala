@@ -37,13 +37,11 @@ class Garage {
 
   def fixById(vehicleId: Int): Unit = {
     vehicleList.map(vehicle => {
-      if(vehicle.getId == vehicleId) {
+      if (vehicle.getId == vehicleId) {
         vehicle.isFixed = true
         vehicle
       }
-
-    }
-    )
+    })
   }
 
 }
