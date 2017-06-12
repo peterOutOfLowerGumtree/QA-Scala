@@ -1,4 +1,4 @@
-package Garage
+package Week1.Garage
 
 class Employee(var _employeeID: Int, name: String, age: Int, contactNo: String, var _role: String, var _wage: Double) extends Person(name, age, contactNo) {
   def employeeID = _employeeID

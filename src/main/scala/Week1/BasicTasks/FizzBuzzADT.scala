@@ -1,4 +1,4 @@
-package BasicTasks
+package Week1.BasicTasks
 
 /**
   * Created by Administrator on 08/06/2017.
@@ -30,4 +30,4 @@ object FizzBuzzADT {
   }
 }
 
-Stream (1 to 15: _*).map (FizzBuzzADT (_) ).foreach (println)
+

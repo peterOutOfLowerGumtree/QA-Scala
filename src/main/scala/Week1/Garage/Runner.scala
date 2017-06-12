@@ -1,4 +1,4 @@
-package Garage
+package Week1.Garage
 
 object Runner {
 

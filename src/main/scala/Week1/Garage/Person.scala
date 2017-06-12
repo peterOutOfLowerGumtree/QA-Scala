@@ -1,4 +1,4 @@
-package Garage
+package Week1.Garage
 
 abstract class Person(var _name: String, var _age: Int, var _contactNo: String) {
   def name = _name

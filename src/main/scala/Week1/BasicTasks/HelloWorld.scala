@@ -1,4 +1,4 @@
-package BasicTasks
+package Week1.BasicTasks
 
 object HelloWorld {
   def main(args: Array[String]) = {

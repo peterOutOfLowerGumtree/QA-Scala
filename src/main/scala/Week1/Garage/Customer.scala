@@ -1,4 +1,4 @@
-package Garage
+package Week1.Garage
 
 class Customer(var _customerID: Int, name: String, age: Int, contactNo: String, var _contactAddress: String, var _postCode: String) extends Person(name, age, contactNo) {
   def customerID = _customerID
