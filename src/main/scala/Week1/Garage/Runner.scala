@@ -54,7 +54,9 @@ object Runner {
 
     garage.removeVehicle("Car")
     garage.removeVehicle(34)
+    garage.fixById(25)
     garage.fixById(26)
+    garage.fixById(27)
 
     println()
 
