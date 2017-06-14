@@ -2,6 +2,7 @@ package Week2.Garage
 
 case class Part (name: String, cost: Double, var isFixed: Boolean)
 
+
 object Part {
   def create(name: String, isFixed:Boolean): Part = name match{
     case "part1" => Part("Part1",10.00,isFixed)

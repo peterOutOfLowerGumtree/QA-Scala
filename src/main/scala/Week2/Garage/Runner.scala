@@ -11,6 +11,9 @@ object Runner {
     garage.CustomerIDGenerator.next
     garage.VehicleIDGenerator.next
 
+    // Garage is closed by default
+    garage.toggleOpen(true)
+    println()
 
     garage.add("John Smith", 25, "0800001066", "Cleaner", 9.87)
     garage.add("Peter Out", 65, "01009998760", "42 Wallaby Way, Sydney", "SYD NEY")
@@ -31,6 +34,7 @@ object Runner {
 
 
     garage.spitPersonList(garage.personList)
+    println()
     garage.spitVehicleList(garage.vehicleList)
 
     println()
@@ -44,6 +48,12 @@ object Runner {
     println()
 
     garage.spitVehicleList(garage.vehicleList)
+
+    println()
+
+    garage.toggleOpen(false)
+
+    println(garage.findVehicle(12))
   }
 
 }
