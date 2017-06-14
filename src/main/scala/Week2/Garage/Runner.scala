@@ -3,7 +3,7 @@ package Week2.Garage
 object Runner {
 
   def main(args: Array[String]): Unit = {
-    val garage = new Garage()
+    val garage = new Garage
 
     // ID Generator is 0-indexed by nature
     // First ID will be '1' for all
@@ -12,45 +12,23 @@ object Runner {
     garage.VehicleIDGenerator.next
 
 
-    garage.addEmployee("John Smith", 25, "0800001066", "Cleaner", 9.87)
-    garage.addCustomer("Peter Out", 65, "01009998760", "42 Wallaby Way, Sydney", "SYD NEY")
+    garage.add("John Smith", 25, "0800001066", "Cleaner", 9.87)
+    garage.add("Peter Out", 65, "01009998760", "42 Wallaby Way, Sydney", "SYD NEY")
 
 
-    garage.addCar("BMW", "X5", "R3GN UMB")
-    garage.addCar("BM6", "X6", "R3GN UM6")
-    garage.addCar("BMW", "X5", "R3GN UMB")
-    garage.addCar("BM6", "X6", "R3GN UM6")
-    garage.addCar("BMW", "X5", "R3GN UMB")
-    garage.addCar("BM6", "X6", "R3GN UM6")
-    garage.addCar("BMW", "X5", "R3GN UMB")
-    garage.addCar("BM6", "X6", "R3GN UM6")
-    garage.addCar("BMW", "X5", "R3GN UMB")
-    garage.addCar("BM6", "X6", "R3GN UM6")
-    garage.addCar("BMW", "X5", "R3GN UMB")
-    garage.addCar("BM6", "X6", "R3GN UM6")
-    garage.addCar("BMW", "X5", "R3GN UMB")
-    garage.addCar("BM6", "X6", "R3GN UM6")
-    garage.addCar("BMW", "X5", "R3GN UMB")
-    garage.addCar("BM6", "X6", "R3GN UM6")
-    garage.addCar("BMW", "X5", "R3GN UMB")
-    garage.addCar("BM6", "X6", "R3GN UM6")
-    garage.addCar("BMW", "X5", "R3GN UMB")
-    garage.addCar("BM6", "X6", "R3GN UM6")
-    garage.addCar("BMW", "X5", "R3GN UMB")
-    garage.addCar("BM6", "X6", "R3GN UM6")
-    garage.addBike("Spark", "Bicycle")
-    garage.addBike("Spar4", "Bicycle")
-    garage.addBike("Spark", "Bicycle")
-    garage.addBike("Spar4", "Bicycle")
-    garage.addBike("Spark", "Bicycle")
-    garage.addBike("Spar4", "Bicwetycle")
-    garage.addBike("Spark", "Bicycle")
-    garage.addBike("Spark", "Bicycle")
-    garage.addBike("Spark", "Bicycle")
-    garage.addBike("Spark", "Bicycle")
-    garage.addBike("Spark3435", "Bicycle")
-    garage.addBike("Spark", "Bicycle")
-    garage.addBike("Spark", "Bicycle")
+    garage.add("BMW", "X5", "R3GN UMB")
+    garage.add("BM6", "X6", "R3GN YM6")
+    garage.add("BMW", "X5", "R4GN UMB")
+    garage.add("BM6", "X6", "R3FN UM6")
+    garage.add("BMW", "X5", "E3GN TMB")
+    garage.add("BM6", "X6", "R3GN UN6")
+    garage.add("Spark", "Bicycle")
+    garage.add("Spar4", "Bickjle")
+    garage.add("Sp3rk", "Bicicle")
+    garage.add("Sdar4", "Btcycle")
+    garage.add("Spavk", "Bicycle")
+    garage.add("Spar4", "Betycle")
+
 
     garage.spitPersonList(garage.personList)
     garage.spitVehicleList(garage.vehicleList)
@@ -58,10 +36,10 @@ object Runner {
     println()
 
     garage.removeVehicle("Car")
-    garage.removeVehicle(34)
-    garage.fixById(25)
-    garage.fixById(26)
-    garage.fixById(27)
+    garage.removeVehicle(8)
+    garage.fixById(9)
+    garage.fixById(10)
+    garage.fixById(11)
 
     println()
 
