@@ -8,10 +8,9 @@ object Guess {
 
     def generateNum {
       randNum = 1 + scala.util.Random.nextInt(60)
-      randNum
     }
-
     generateNum
+
     val sc = new Scanner(System.in)
     println("Enter guess:")
     var input = sc.next.toInt
