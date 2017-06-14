@@ -1,7 +1,9 @@
 def getSandwich(input: String): String = {
   val beginLetter = input.indexOf('d')
   val endLetter = input.lastIndexOf('b')
-  input.substring(beginLetter+1,endLetter)
+  try {
+    input.substring(beginLetter + 1, endLetter)
+  } catch {case e: Exception => ""}
 }
 
 getSandwich("breadjambread")
