@@ -5,8 +5,8 @@ object Runner {
   def main(args: Array[String]): Unit = {
     val garage = new Garage
 
-    // ID Generator is 0-indexed by nature
-    // First ID will be '1' for all
+    // id Generator is 0-indexed by nature
+    // First id will be '1' for all
     garage.EmployeeIDGenerator.next
     garage.CustomerIDGenerator.next
     garage.VehicleIDGenerator.next
@@ -51,9 +51,9 @@ object Runner {
 
     println()
 
-    garage.toggleOpen(false)
+//    garage.toggleOpen(false)
 
-    println(garage.findVehicle(12))
+    println(garage.findVehicle(12).get)
   }
 
 }
