@@ -81,11 +81,11 @@ class Garage {
     else garageIsClosed
   }
 
-  def findVehicle(id: Long): Option[Vehicle] = {
-    //if (garageIsOpen) {
+  def findVehicle(id: Long): Any = {
+    if (garageIsOpen) {
       vehicleList.find(v => v.id == id)
-   // }
-    //else garageIsClosed
+    }
+    else garageIsClosed
   }
 
   object VehicleIDGenerator {

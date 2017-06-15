@@ -3,6 +3,7 @@ package Week2.Garage
 object Runner {
 
   def main(args: Array[String]): Unit = {
+    print("\n    {__   {__     {__{_______    {__      {__      {__ {__ {__       {____     {__      {__  {__ __  \n {__   {__{__     {__{__    {__  {__       {__    {__  {_    {__   {__    {__   {__    {__ {__    {__\n{__       {__     {__{__    {__  {__        {__ {__    {_     {__{__        {__  {__ {__    {__      \n{__       {__     {__{_ {__      {__          {__      {___ {_   {__        {__    {__        {__    \n{__       {__     {__{__  {__    {__          {__      {_     {__{__        {__    {__           {__ \n {__   {__{__     {__{__    {__  {__          {__      {_      {_  {__     {__     {__     {__    {__\n   {____    {_____   {__      {__{________    {__      {____ {__     {____         {__       {__ __  \n                                                                                                     \n")
     val garage = new Garage
 
     // id Generator is 0-indexed by nature
@@ -45,15 +46,16 @@ object Runner {
     garage.fixById(10)
     garage.fixById(11)
 
-    println()
-
     garage.spitVehicleList(garage.vehicleList)
 
     println()
 
-//    garage.toggleOpen(false)
+    println(garage.findVehicle(11))
+    println(garage.findVehicle(12))
+    println()
 
-    println(garage.findVehicle(12).get)
+    garage.toggleOpen(false)
+    garage.garageIsClosed
   }
 
 }
