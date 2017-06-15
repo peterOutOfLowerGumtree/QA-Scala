@@ -1,5 +1,5 @@
 def goldilocks(input: String): Unit = {
-  var goldilist = input.split("\n")
+  val goldilist = input.split("\n")
   val goldilocksInfo = goldilist(0).split(" ")
   val weight = goldilocksInfo(0).toInt
   val temp = goldilocksInfo(1).toInt
