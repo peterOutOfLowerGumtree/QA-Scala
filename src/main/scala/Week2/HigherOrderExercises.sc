@@ -10,7 +10,7 @@ object tailRec {
   }
 }
 
-tailRec.sumRec(x => x * x)(3, 5)
+tailRec.sumRec(x => x + x)(3, 5)
 
 // Currying
 object currying {
@@ -40,19 +40,30 @@ sumFactorials(3, 4)
 sumCubes(1, 10) + sumFactorials(10, 20)
 
 object Product {
+  def product(f: Int => Int)(a: Int, b: Int): Int =
+    if (a > b) 1
+    else f(a) * product(f)(a + 1, b)
+
+  def fact(n: Int) = product(x => x)(1,n)
+}
+
+Product.product(x => x * x)(3,4)
+Product.fact(5)
+
+object Product1 {
   def mapReduce(f: Int => Int, combine: (Int, Int) => Int, zero: Int)(a: Int, b: Int): Int =
     if (a > b) zero
     else combine(f(a), mapReduce(f, combine, zero)(a + 1, b))
 
-  def product(f: Int => Int)(a: Int, b: Int): Int = mapReduce(f, (x, y) => x * y, 1)(a, b)
+  def product(f: Int => Int)(a: Int, b: Int): Int =
+    mapReduce(f, (x, y) => x * y, 1)(a, b)
 
   def fact(n: Int) = product(x => x)(1, n)
 
 
-
 }
 
-import Product.product
+import Product1.product
 
 product(x => x * x)(3, 4)
-Product.fact(5)
+Product1.fact(5)
