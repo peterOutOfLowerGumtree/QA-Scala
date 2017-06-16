@@ -1,7 +1,6 @@
 package Week2.Garage
 
 import scala.collection.mutable.ArrayBuffer
-import scala.util.Random
 
 class Garage {
   var personList = new ArrayBuffer[Person]()
@@ -13,9 +12,7 @@ class Garage {
       garageIsOpen = true
       println("Garage is open!")
     }
-    else {
-      garageIsOpen = false
-    }
+    else garageIsOpen = false
   }
 
   def garageIsClosed = println("Garage is closed! Go away!")

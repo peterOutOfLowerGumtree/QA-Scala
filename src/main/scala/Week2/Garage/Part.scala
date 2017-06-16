@@ -1,25 +1,30 @@
 package Week2.Garage
 
+import scala.collection.mutable.ArrayBuffer
+import scala.util.Random
+
 case class Part (name: String, cost: Double, var isFixed: Boolean)
 
 
 object Part {
-  def create(name: String, isFixed:Boolean): Part = name match{
-    case "part1" => Part("Part1",10.00,isFixed)
-    case "part2" => Part("Part2",11.00,isFixed)
-    case "part3" => Part("Part3",12.00,isFixed)
-    case "part4" => Part("Part4",13.00,isFixed)
-    case "part5" => Part("Part5",14.00,isFixed)
-    case "part6" => Part("Part6",15.00,isFixed)
-    case "part7" => Part("Part7",16.00,isFixed)
-    case "part8" => Part("Part8",17.00,isFixed)
-    case "part9" => Part("Part9",18.00,isFixed)
-    case "part10" => Part("Part10",19.00,isFixed)
-    case "part11" => Part("Part11",20.00,isFixed)
-    case "part12" => Part("Part12",21.00,isFixed)
-    case "part13" => Part("Part13",22.00,isFixed)
-    case "part14" => Part("Part14",23.00,isFixed)
-    case "part15" => Part("Part15",24.00,isFixed)
+  def create(name: Int, isFixed:Boolean): Part = name match{
+    case 1 => Part("Part1",10,isFixed)
+    case 2 => Part("Part2",11,isFixed)
+    case 3 => Part("Part3",12,isFixed)
+    case 4 => Part("Part4",13,isFixed)
+    case 5 => Part("Part5",14,isFixed)
+    case 6 => Part("Part6",15,isFixed)
+    case 7 => Part("Part7",16,isFixed)
+    case 8 => Part("Part8",17,isFixed)
+    case 9 => Part("Part9",18,isFixed)
+    case 10 => Part("Part10",19,isFixed)
+    case 11 => Part("Part11",20,isFixed)
+    case 12 => Part("Part12",21,isFixed)
+    case 13 => Part("Part13",22,isFixed)
+    case 14 => Part("Part14",23,isFixed)
+    case 15 => Part("Part15",24,isFixed)
     case _ => throw new IllegalArgumentException
   }
+
+
 }

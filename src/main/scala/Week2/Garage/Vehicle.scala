@@ -1,5 +1,7 @@
 package Week2.Garage
 
+import scala.collection.mutable.ArrayBuffer
+
 abstract class Vehicle {
   val id: Long
   def brand: String
