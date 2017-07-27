@@ -6,9 +6,6 @@ import scala.io.Source
   * Created by Administrator on 15/06/2017.
   */
 object HashMaps extends App {
-  import java.util
-
-  import scala.collection.mutable.{ArrayBuffer}
 
   def readWords(input: String) = input.split("\n")
   readWords("Hello world! I am the best!") // Test
@@ -21,7 +18,7 @@ object HashMaps extends App {
 //  val fileContents = "C:\\Users\\Administrator\\Documents\\JMW WK 6\\wordList.txt"
 
   println("Words of longest length:")
-  val longest = fileContents.sortWith(_.length > _.length).head.toString.length
+  val longest = fileContents.sortWith(_.length > _.length)(0).toString.length
   var count = 0
   for(i<-0 until longest) {
     if(fileContents(i).length == longest) println(fileContents(i))
