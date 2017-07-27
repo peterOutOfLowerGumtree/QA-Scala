@@ -1,4 +1,4 @@
-# Scala Work
+# Scala Work 
 Work done in Scala during weeks 6-7 of training
 
 Includes:
